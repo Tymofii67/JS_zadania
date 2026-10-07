@@ -1,0 +1,31 @@
+
+        <html> 
+          <head> 
+            <meta charset="UTF-8"> 
+            <title>Kovalchuk 2p</title>
+          </head>
+         <body> 
+          <div style="color:green;font-size:38px;"> 
+            <script language="JavaScript"> 
+              
+              var D1_kov=prompt("Data1=",""); 
+              var G1_kov=prompt("Godzina1=",""); 
+              var D2_kov=prompt("Data2=","");
+              var G2_kov=prompt("Godzina2=",""); 
+              var sekund; 
+              var a=parseFloat(D1_kov); 
+              var b=parseFloat(D2_kov); 
+              var c=parseFloat(G1_kov); 
+              var d=parseFloat(G2_kov);
+              var sekund = ((a * 24 + c) - (b * 24 + d)) * 3600;
+              document.write("Ilość sekund między dniami "+a+" i "+b+" i godzinami "+c+" i "+d+" = "+sekund+"<br>"); 
+                function okno_zamknij_kovalchuk() 
+                 { 
+                   window.close()   
+                 } 
+              </script> 
+            </div>  
+          <input type="button" value="zamknij okno" onclick="okno_zamknij_kovalchuk()"/> 
+        </body> 
+       </html> 
+    
