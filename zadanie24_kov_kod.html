@@ -1,0 +1,44 @@
+<html> 
+   <body> 
+     <textarea cols="90" rows="24"> 
+<html> 
+<head> 
+<title>kovalchuk 2p</title> 
+         
+         <body bgcolor="silver"> 
+          <div style="color:blue;font-size:25px;"> 
+            <script language="JavaScript"> 
+
+              var x1_kov=prompt("x1=",""); 
+              var x2_kov=prompt("x2=",""); 
+              var y1_kov;
+              var y2_kov;
+              var y3_kov;
+              var x1_r_kov; 
+                  x1_r_kov= (Math.PI*x1_kov)/180; 
+                  x2_r_kov= (Math.PI*x2_kov)/180;
+        
+                  y1_kov= 3 * Math.pow(x1_kov,7/9);
+                  y2_kov= 2 * Math.cos(x1_r_kov) + 3 * Math.cos(x1_r_kov);
+                 y3_kov = Math.pow(Math.pow(x1_kov, 5) + 2 * Math.pow(x2_kov, 4), 1/3) * Math.abs(x1_kov - x2_kov);
+              document.write("x1= "+x1_kov+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspx2= "+x2_kov+"<br>");
+              document.write("x1= "+x1_kov+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspx1= "+x1_r_kov.toFixed(2)+"<br>");
+              document.write("y1= "+y1_kov.toFixed(2)+"<br>");
+              document.write("y2= "+y2_kov.toFixed(2)+"<br>");
+              document.write("y3= "+y3_kov.toFixed(2)+"<br>");
+
+             
+
+                function okno_zamknij_kovalchuk() 
+                 {
+                   window.close() 
+                 } 
+              </script> 
+            </div> 
+          <input type="button" value="zamknij okno" onclick="okno_zamknij_kovalchuk()"/> 
+       
+    </body> 
+</html> 
+     </textarea>
+   </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title> Kovalchuk 2p</title>
+    <script type="text/javascript">
+        function Pole_kov(a_kov, b_kov) {
+            var a = parseFloat(a_kov);
+            var b = parseFloat(b_kov);
+            var pole = a * b;
+            document.getElementById('wyprowadz_pole_kov').value = pole.toFixed(2);
+        }
+        function obwod_kov(a_kov, b_kov) {
+            var a = parseFloat(a_kov);
+            var b = parseFloat(b_kov);
+            var obwod = 2 * (a + b);
+            document.getElementById('wyprowadz_obwod_kov').value = obwod.toFixed(2);
+        }
+        function okno_zamknij_kovalchuk() {
+             window.close(); 
+            }
+    </script>
+</head>
+<body bgcolor="lightgreen">
+    <h2>Obliczanie pola i obwodu prostokąta</h2>
+    <form>
+        Podaj a: <input type="text" id="a_dana_kov" size="6"><br><br>
+        Podaj b: <input type="text" id="b_dana_kov" size="6"><br><br>
+        <input type="button" value="Oblicz pole" onclick="Pole_kov(document.getElementById('a_dana_kov')
+            .value, document.getElementById('b_dana_kov').value)"><br><br>
+        <input type="button" value="Oblicz obwód" onclick="obwod_kov(document.getElementById('a_dana_kov')
+            .value, document.getElementById('b_dana_kov').value)"><br><br>
+        Pole: <input type="text" id="wyprowadz_pole_kov" size="10"><br><br>
+        Obwód: <input type="text" id="wyprowadz_obwod_kov" size="10"><br><br>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_kovalchuk()">
+</body>
+</html>

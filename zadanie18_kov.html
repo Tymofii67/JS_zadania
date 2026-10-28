@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kovalchuk 2p</title>
+    <style>
+        div {color: navy; font-size: 30px;}
+    </style>
+</head>
+<body bgcolor="lightgreen">
+    <div>
+        <script language="JavaScript">
+            function okno_zamknij_kovalchuk() {
+            window.close();
+           }
+            var a_kov = parseFloat(prompt("a=", ""));
+            var b_kov = parseFloat(prompt("b=", ""));
+
+            function suma_kov(a, b) {
+                return a + b;
+            }
+            function odejmowanie_kov(a, b) {
+                return a - b;
+            }
+            function mnozenie_kov(a, b) {
+                return a * b;
+            }
+            function od_kwadratu_kov(a, b) {
+                return [a * a, b * b];
+            }
+            function reszta_z_dzielenia_a_przez_b_kov(a, b) {
+                return a % b;
+            }
+
+            document.write("suma = " + suma_kov(a_kov, b_kov) + "<br>");
+            document.write("odejmowanie = " + odejmowanie_kov(a_kov, b_kov) + "<br>");
+            document.write("mnożenie = " + mnozenie_kov(a_kov, b_kov) + "<br>");
+            var kwadraty = od_kwadratu_kov(a_kov, b_kov);
+            document.write("a^2 = " + kwadraty[0] + ", b^2 = " + kwadraty[1] + "<br>");
+            document.write("reszta z dzielenia " + a_kov + " przez " + b_kov + " = " 
+            + reszta_z_dzielenia_a_przez_b_kov(a_kov, b_kov) + "<br>");
+        </script>
+    </div>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_kovalchuk()">
+</body>
+</html>

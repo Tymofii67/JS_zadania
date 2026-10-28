@@ -1,0 +1,51 @@
+<html> 
+   <body> 
+     <textarea cols="90" rows="24"> 
+ <!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kovalchuk 2p</title>
+    <script type="text/javascript">
+      function okno_zamknij_kovalchuk() { 
+          window.close(); 
+     }
+      function dlugosc_kov(D, X) {
+          var d = parseFloat(D);
+          var x = parseFloat(X);
+          var dlugosc = Math.sqrt(d*d + x*x);
+          document.getElementById('wynik_dlugosc').value = dlugosc.toFixed(2);
+      }
+      function kat_kov(D, X) {
+          var d = parseFloat(D);
+          var x = parseFloat(X);
+          var rad = Math.atan(d / x);
+          var deg = rad * (180 / Math.PI);
+          document.getElementById('wynik_kat').value = deg.toFixed(2);
+      }
+      function oblicz_kov() {
+          var d_val = document.getElementById('D_kov').value;
+          var x_val = document.getElementById('X_kov').value;
+          dlugosc_kov(d_val, x_val);
+          kat_kov(d_val, x_val);
+      }
+    </script>
+</head>
+<body bgcolor="lightgreen">
+    <h2>Pobliczanie odległości od drabiny i kąta</h2>
+    <form>
+        Podaj d= <input type="text" id="D_kov" size="6">
+        Podaj x= <input type="text" id="X_kov" size="6">
+        <br><br>
+        <input type="button" value="oblicz" onclick="oblicz_kov()">
+        <br><br>
+        Drabina= <input type="text" id="wynik_dlugosc" size="10">
+        Alfa= <input type="text" id="wynik_kat" size="10">
+    </form>
+    <br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_kovalchuk()">
+</body>
+</html>
+     </textarea>
+   </body>
+</html>
