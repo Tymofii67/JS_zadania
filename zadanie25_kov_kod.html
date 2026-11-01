@@ -1,0 +1,38 @@
+<html> 
+   <body> 
+     <textarea cols="90" rows="24"> 
+<html>
+<head>
+ <title>Kovalchuk 2p</title>
+</head>
+<body bgcolor="lightgreen">
+    <div style="color:Indigo;font-size:30px;">
+<script language="JavaScript">
+     function okno_zamknij_kovalchuk() {
+            window.close();
+        }
+var liczba1 = prompt("N0=", "");
+var NO_kov = parseFloat(liczba1);
+
+var liczba2 = prompt("T_0_5=", "");
+var T_0_5_kov = parseFloat(liczba2);
+
+var liczba3 = prompt("t=", "");
+var t_kov = parseFloat(liczba3);
+
+var lambda_kov = Math.LN2 / T_0_5_kov;
+var N_kov = NO_kov * Math.exp(-lambda_kov * t_kov);
+
+document.write("N0= " + NO_kov + " [sztuk]<br>");
+document.write("t= " + t_kov + " [lat]<br>");
+document.write("T1/2= " + T_0_5_kov + " [lat]<br>");
+document.write("lambda= " + lambda_kov.toFixed(2) + " [1/rok]<br>");
+document.write("N= " + N_kov.toFixed(2) + " [sztuk]<br>");
+</script>
+</div>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_kovalchuk()">
+</body>
+</html>
+     </textarea>
+   </body>
+</html>
