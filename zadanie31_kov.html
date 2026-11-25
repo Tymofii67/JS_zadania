@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 31 – Kovalchuk</title>
+</head>
+<body bgcolor="lightblue">
+<div style="color:red;font-size:51px;">
+<script type="text/javascript">
+var autobus = {
+    ilosc_pasazerow: '21',
+    maksymalna_predkosc: '155 km/h',
+    pokaz: function() {
+      document.write("Dane obiektu: maksymalna prędkość oraz ilość pasażerów<br>");
+          document.write("Dane autobusu ==> " + this.ilosc_pasazerow + ", " +  this.maksymalna_predkosc + "<br>");
+    }
+}
+autobus.pokaz(); 
+  autobus.kolor= 'żółty'; 
+  autobus.wypisz=function() {alert("Kolor autobusa: " + this.kolor + " .")} 
+  autobus.wypisz(); 
+</script>
+</div>
+<br>
+<div style="color:blue;font-size:33px;">
+Mój numer w dzienniku jest 8 i moje dane to:<br>
+Obiekt to autobus<br>
+pola:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ilosc_pasazerow<br>
+&nbsp;&nbsp;&nbsp;&nbsp;maksymalna_predkosc<br>
+metoda:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;autobus.pokaz()<br>
+==========================================================================<br>
+Nowe pole to kolor dla obiektu autobus, wartość pola to żółty<br>
+Nowa definicja metody to autobus.wypisz(); z użyciem alert();<br>
+Użycie metody autobus.wypisz();
+
+</div>
+</body>
+</html>

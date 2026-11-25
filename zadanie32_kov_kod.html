@@ -1,0 +1,67 @@
+<html>
+    <head>
+   <title>kovalchuk 2p </title>
+              </head>
+    <body>
+ <textarea cols="90" rows="24"> 
+<!DOCTYPE html>
+ <html lang="pl">
+     <head>
+         <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title size="2xl">
+            Zadanie 32 – kovalchuk
+            </title>
+             </head> 
+             <body bgcolor="yellow"> 
+                <div style="color:green;font-size:46px;"> 
+                    <script type="text/javascript"> 
+                    function okno_zamknij_kovalchuk() {
+            window.close();
+        }
+                    function autobus( ilosc_pasazerow_k,kolor_k, maksymalna_predkosc_k)
+                     //początek konstruktora 
+                      { 
+                     this.ilosc_pasazerow=ilosc_pasazerow_k;
+                      this.kolor=kolor_k;
+                      this.maksymalna_predkosc=maksymalna_predkosc_k;
+                       } 
+                       //koniec konstruktora 
+                        autobus.prototype.wypisz = function ()
+                         //definicja metody 
+                         {
+                             alert(this.ilosc_pasazerow + ", " + this.kolor+ ", " + this.maksymalna_predkosc + " km/h");
+                              };
+                               var autobus1 = new autobus(25, "czarny", 160);
+                                // nowy obiekt osoba1 
+                                var autobus2 = new autobus(15, "czerwony", 80); 
+                                // nowy obiekt osoba2 
+                                autobus1.wypisz(); 
+                                // uruchomienie metody wypisz() dotyczącej osoby1 z użyciem alert(); 
+                                autobus2.wypisz(); 
+                                // uruchomienie metody wypisz() dotyczącej osoby2 z użyciem alert(); 
+                                 document.write("Moje nazwisko to KOVALCHUK mam numer 8 a obiekt to autobus"+"<br>"); 
+                                 document.write("dostęp do pól autobus1 i autobus2"+"<br>"); 
+                                 document.write("czyli wypisanie danych"+"<br>");
+                                  // poniżej dostęp/wypisanie danych do pól osoby1 i osoba2
+                                   document.write("autobus pierwszy =>"+" "+autobus1.ilosc_pasazerow+", "+autobus1.kolor+", "+autobus1.maksymalna_predkosc+"km/h<br>");
+                                    document.write("autobus drugi =>"+" "+autobus2.ilosc_pasazerow+", "+autobus2.kolor+", "+autobus2.maksymalna_predkosc+"km/h<br>");
+                                     </script>
+                                      </div>
+                                       <div style="color:blue;font-size:28px;">
+                                        <br> programowanie obiektowe:<br>
+                                         Słowo kluczowe prototype stosowane jest do:
+                                        <br> Stosowane jest ono do dodawania nowych właściwości i metod do obiektów.<br>
+                                         Dzięki niemu obiekty utworzone na podstawie tej samej funkcji mogą korzystać z tych samych metod,<br>
+                                          bez konieczności tworzenia ich osobno dla każdego obiektu.<br>
+                                         Jest to również sposób na dziedziczenie właściwości i metod. <br>
+                                         Słowo kluczowe new stosowane jest do:<br>
+                                         <br> Słowo kluczowe new służy w JavaScript do tworzenia nowych obiektów na podstawie klasy lub funkcji konstruktora.<br>
+                                          Dzięki niemu możemy tworzyć wiele obiektów o podobnych właściwościach. <br> 
+                                        </div>
+                                        <p align="center">        <input type="button" value="zamknij okno" onclick="okno_zamknij_kovalchuk()"> </p>
+                                     </body> 
+                                 </html>
+ </textarea>
+    </body>
+</html>
